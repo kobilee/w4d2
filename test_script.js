@@ -27,6 +27,6 @@ client.connect((err) => {
 
 function print(rows){
     rows.forEach(function(column, i) {
-      console.log(`${i}: ${column.first_name} ${column.last_name}, born '${column.birthdate}'`);
+      console.log(`${i + 1}: ${column.first_name} ${column.last_name}, born '${column.birthdate}'`);
     });
 }
